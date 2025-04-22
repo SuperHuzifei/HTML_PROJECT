@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        /* element selector */
+        .father > .child {
+            color: red;
+        }
+        /* grandson selector */
+        .father p {
+            color: blue;
+        }
+        /*side element selector*/
+        h3 + p {
+            color: green;
+        }
+        /* pseudo class selector */
+        #element:hover {
+            background-color: aquamarine;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>different type css selector</h1>
+
+    <h2>element selector</h2>
+    <h3 class="hughtlight">a lass selector</h3>
+    <h4>id selector</h4>
+    <div class="father">
+        <p class="child">this is a child</p>
+        <div>
+            <p class="grand child">this is a gandchild</p>
+        </div>
+    </div>
+
+    <p>normal p lable</p>
+    <h3>brother lable</h3>
+    <p>another p lable</p>
+
+    <h3 id="element">this is a pseudo class selector</h3>
+</body>
+</html>

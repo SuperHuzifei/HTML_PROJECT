@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="box1"> cnm </div>
+    <div class="box2">fuckyou</div>
+    <div>normal</div>
+    <button>click</button>
+
+    <script>
+        var element_id = document.getElementById('box1');
+        console.log(element_id);
+        var element_class = document.getElementsByClassName('box2')[0];
+        console.log(element_class);
+        var element_tag = document.getElementsByTagName("div");
+        console.log(element_tag);
+        
+        element_id.innerHTML = '修改id选择器文本';
+        element_class.innerText = '修改id选择器文本';//纯文本
+
+        //属性绑定事件
+        var button_element = document.getElementsByTagName('button')[0];
+        console.log(button_element);
+        
+        button_element.onclick = function() {
+            alert('clicked');
+        }
+
+    </script>
+</body>
+</html> 
